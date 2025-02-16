@@ -111,8 +111,6 @@ http://localhost:8000/score-resumes \
 }
 ```
 
-![Swagger UI Demo](docs/swagger-demo.png)
-
 ## Contributing
 
 1. Fork the repository
