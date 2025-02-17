@@ -1,5 +1,5 @@
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
-from openai import OpenAI  # Changed import
+from openai import OpenAI  
 from typing import List
 import os
 import fitz
@@ -12,7 +12,6 @@ from fastapi.responses import StreamingResponse
 
 app = FastAPI()
 
-# Initialize OpenAI client properly
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))  # New client initialization
 print(os.getenv("OPENAI_API_KEY"))
 
@@ -35,7 +34,6 @@ async def extract_text(file: UploadFile) -> str:
 async def extract_criteria(file: UploadFile = File(...)):
     try:
         text = await extract_text(file)
-        # New SDK syntax
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[{
