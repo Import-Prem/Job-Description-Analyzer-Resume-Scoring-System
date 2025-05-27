@@ -1,5 +1,5 @@
 
-# Job Description Analyzer & Resume Scoring System
+# Job Description Analyzer & Resume Scoring System.
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai)](https://openai.com/)
